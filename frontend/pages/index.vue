@@ -1,13 +1,11 @@
 <template>
   <v-row>
-    <div class="container">
-      <v-col cols="12" sm="4">
-        <Menu class="menu" :hover="'crawler'"></Menu>
-      </v-col>
-      <v-col>
-        <Form></Form>
-      </v-col>
-    </div>
+    <v-col cols="12" sm="2">
+      <Menu class="menu" :hover="'crawler'"></Menu>
+    </v-col>
+    <v-col>
+      <Form></Form>
+    </v-col>
   </v-row>
 </template>
 

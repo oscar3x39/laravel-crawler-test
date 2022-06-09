@@ -1,17 +1,9 @@
 <template>
   <v-row>
-    <div class="container">
-      <v-col cols="12" sm="4">
-        <Menu class="menu" :hover="'crawler'" />
+      <v-col cols="12" sm="2">
+        <Menu class="menu"></Menu>
       </v-col>
       <v-col>
-        <!-- <v-data-table
-          :headers="headers"
-          :items="desserts"
-          :items-per-page="5"
-          class="elevation-1"
-        ></v-data-table> -->
-
         <v-data-table
           :headers="headers"
           :items="items"
@@ -23,9 +15,7 @@
             </a>
           </template>
         </v-data-table>
-
       </v-col>
-    </div>
   </v-row>
 </template>
 
@@ -44,6 +34,7 @@
       return {
         headers: [
           { text: 'Title', value: 'title' },
+          { text: 'Url', value: 'url' },
           { text: 'Descrption', value: 'description' },
           { text: 'Screenshot', value: 'imageUrl' },
           { text: 'Datetime', value: 'created_at' },

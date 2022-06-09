@@ -35,7 +35,7 @@
       <!-- detail -->
       <v-card
           class="mx-auto my-12"
-          max-width="374"
+          max-width="100%"
           v-show="submit && !loading"
         >
           <template slot="progress">

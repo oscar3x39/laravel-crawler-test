@@ -1,12 +1,8 @@
 <template>
   <v-app>
-    <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
-    </v-main>
+    <Nuxt />
     <v-footer>
-      <span>Onramp &copy; {{ new Date().getFullYear() }}</span>
+      <span>crawler-test &copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>

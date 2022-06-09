@@ -1,10 +1,27 @@
 <template>
     <v-card
-        height="400"
-        width="256"
-        class="mx-auto"
+        height="100%"
+        width="100%"
       >
-        <v-navigation-drawer permanent>
+        <v-navigation-drawer
+          height="100%"
+          width="100%"
+          floating
+          left
+          permanent
+        >
+          <template v-slot:prepend>
+            <v-list-item two-line>
+              <v-list-item-avatar>
+                <img src="https://randomuser.me/api/portraits/women/81.jpg">
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title>Adminstrator</v-list-item-title>
+                <v-list-item-subtitle>Logged In</v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+          </template>
           <v-divider></v-divider>
           <v-list
             dense
@@ -19,11 +36,9 @@
                 <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-icon>
 
-              <v-list-item-content>
-                <v-list-item-title :class="hover == item.title ? 'menu-hover' : ''">
-                  <a :href="item.link">
-                    {{ item.title }}
-                  </a>
+              <v-list-item-content @click="open(item.link)">
+                <v-list-item-title>
+                  {{ item.title }}
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -42,6 +57,11 @@
         ],
         right: null,
       }
+    },
+    methods: {
+      open(link) {
+        this.$router.push(link)
+      },
     },
     props: [
       'hover'
