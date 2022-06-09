@@ -26,7 +26,10 @@ class CrawlerController extends Controller
         $description = $this->getDescription();
         $imageUrl = $this->getScreenshot();
 
-        $this->save($title, $description, $imageUrl);
+        $filename = storage_path("images/$imageUrl");
+        if (!Crawler::where('imageUrl', $filename)->exists()) {
+            $this->save($title, $this->url, $description, $imageUrl);
+        }
 
         return response()->json([
             'title' => $title,
@@ -65,9 +68,10 @@ class CrawlerController extends Controller
         return $filename . ".jpg";
     }
 
-    private function save($title, $description, $imageUrl) {
+    private function save($title, $url, $description, $imageUrl) {
         $model = new Crawler;
         $model->title = $title;
+        $model->url = $url;
         $model->description = $description;
         $model->imageUrl = $imageUrl;
         $model->status = 0;

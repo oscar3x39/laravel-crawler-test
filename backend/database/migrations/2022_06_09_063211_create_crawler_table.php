@@ -16,6 +16,7 @@ class CreateCrawlerTable extends Migration
         Schema::create('crawler', function (Blueprint $t) {
             $t->id();
             $t->string('title');
+            $t->string('url');
             $t->text('description');
             $t->string('imageUrl');
             $t->integer('status'); // 0 task, 1 doing,  2 finish
