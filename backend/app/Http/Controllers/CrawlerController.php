@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Spatie\Browsershot\Browsershot;
+
 use DOMDocument;
 use File;
 use Response;
+
+use App\Models\Crawler;
 
 class CrawlerController extends Controller
 {
@@ -19,10 +22,16 @@ class CrawlerController extends Controller
         $this->url = $data['url'];
         $this->parserUrl($this->url);
 
+        $title = $this->getTitle();
+        $description = $this->getDescription();
+        $imageUrl = $this->getScreenshot();
+
+        $this->save($title, $description, $imageUrl);
+
         return response()->json([
-            'title' => $this->getTitle(),
-            'description' => $this->getDescription(),
-            'screenshot' => $this->getScreenshot()
+            'title' => $title,
+            'description' => $description,
+            'screenshot' => $imageUrl
         ]);
     }
 
@@ -48,11 +57,21 @@ class CrawlerController extends Controller
     }
 
     function crawlerList() {
-        
+        $all = Crawler::all();
+        return response()->json($all);
     }
 
     private function filenameFormat($filename) {
-        return url('/') ."/". $filename . ".jpg";
+        return $filename . ".jpg";
+    }
+
+    private function save($title, $description, $imageUrl) {
+        $model = new Crawler;
+        $model->title = $title;
+        $model->description = $description;
+        $model->imageUrl = $imageUrl;
+        $model->status = 0;
+        $model->save();
     }
 
     private function getScreenshot() {

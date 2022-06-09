@@ -18,6 +18,7 @@ class CreateCrawlerTable extends Migration
             $t->string('title');
             $t->text('description');
             $t->string('imageUrl');
+            $t->integer('status'); // 0 task, 1 doing,  2 finish
             $t->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $t->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });

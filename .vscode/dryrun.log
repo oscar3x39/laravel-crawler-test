@@ -1,0 +1,7 @@
+make: Entering directory `/Users/oscar/code/crawler-test'
+docker-compose up -d
+docker-compose run php php artisan cache:clear
+docker-compose run php php artisan view:clear
+docker-compose run php php artisan config:clear
+make: Leaving directory `/Users/oscar/code/crawler-test'
+ 
