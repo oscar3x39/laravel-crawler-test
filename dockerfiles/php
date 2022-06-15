@@ -10,18 +10,6 @@ RUN apt-get update
 RUN apt-get install -y libmcrypt-dev curl
 RUN apt-get install -y build-essential
 
-# source not found problem
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
-
-# Install nvm with node and npm
-RUN touch ~/.bashrc && chmod +x ~/.bashrc
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-RUN . ~/.nvm/nvm.sh && source ~/.bashrc && nvm install ${NODE_VERSION}
-# RUN . ~/.nvm/nvm.sh && source ~/.bashrc && which node
-# RUN . ~/.nvm/nvm.sh && source ~/.bashrc && npm -v
-ENV PATH="~/.nvm/versions/node/v${NODE_VERSION}/bin/:$PATH"
-#RUN export PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:$PATH" && cd /var/www/html && npm install puppeteer
-
 #RUN rm -rf /var/lib/apt/lists
 
 RUN pecl install mcrypt-1.0.4
