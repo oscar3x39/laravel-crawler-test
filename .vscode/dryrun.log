@@ -1,7 +1,8 @@
-make: Entering directory `/Users/oscar/code/crawler-test'
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/workspace/crawler-test'
 docker-compose up -d
 docker-compose run php php artisan cache:clear
 docker-compose run php php artisan view:clear
 docker-compose run php php artisan config:clear
-make: Leaving directory `/Users/oscar/code/crawler-test'
+make: Leaving directory '/workspace/crawler-test'
  

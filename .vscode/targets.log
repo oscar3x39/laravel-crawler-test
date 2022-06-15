@@ -1,193 +1,297 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 3.81
-# Copyright (C) 2006  Free Software Foundation, Inc.
-# This is free software; see the source for copying conditions.
-# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.
+make: *** No rule to make target 'all'.  Stop.
 
-# This program built for i386-apple-darwin11.3.0
- 
-make: *** No rule to make target `all'.  Stop.
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
 
-
-# Make data base, printed on Thu Jun  9 15:45:08 2022
+# Make data base, printed on Wed Jun 15 16:34:11 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
+# environment
+RUBY_VERSION = ruby-2.7.6
 # automatic
 ?F = $(notdir $?)
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-LC_CTYPE = zh_TW.UTF-8
+GP_OPEN_EDITOR = /ide/bin/remote-cli/gitpod-code
+# default
+.SHELLFLAGS := -c
 # environment
 VSCODE_LOG_NATIVE = false
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
+# environment
+VSX_REGISTRY_URL = https://open-vsx.gitpod.io
+# environment
+GRADLE_HOME = /home/gitpod/.sdkman/candidates/gradle/current
+# environment
+rvm_path = /home/gitpod/.rvm
+# environment
+SUPERVISOR_ADDR = localhost:22999
+# environment
+SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/a1c40a62-2a25-469b-b7e1-3b1e9e0053dd
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/oscar/code/crawler-test
+CURDIR := /workspace/crawler-test
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-tw","availableLanguages":{"*":"zh-tw"},"_languagePackId":"50a216cf84c622b1d20f706e15b82d72.zh-tw","_translationsConfigFile":"/Users/oscar/Library/Application Support/Code/clp/50a216cf84c622b1d20f706e15b82d72.zh-tw/tcf.json","_cacheRoot":"/Users/oscar/Library/Application Support/Code/clp/50a216cf84c622b1d20f706e15b82d72.zh-tw","_resolvedLanguagePackCoreLocation":"/Users/oscar/Library/Application Support/Code/clp/50a216cf84c622b1d20f706e15b82d72.zh-tw/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/Users/oscar/Library/Application Support/Code/clp/50a216cf84c622b1d20f706e15b82d72.zh-tw/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-TW","availableLanguages":{}}
 # environment
-_ = /usr/bin/make
-# makefile (from `Makefile', line 1)
+_ = /ide/node
+# environment
+GITPOD_THEIA_PORT = 23000
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+GITPOD_ANALYTICS_WRITER = segment
+# environment
+GO_VERSION = 1.18.3
+# environment
+MAVEN_HOME = /home/gitpod/.sdkman/candidates/maven/current
+# makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
+# environment
+GITPOD_WORKSPACE_CONTEXT_URL = https://github.com/oscar3x39/crawler-test
+# 'override' directive
+GNUMAKEFLAGS := 
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-__CFBundleIdentifier = com.microsoft.VSCode
+THEIA_WORKSPACE_ROOT = /workspace/crawler-test
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/s_/yzmlxl3x7kb8gzkzfvjpjs3h0000gn/T/vscode-ipc-98de84a2-9347-456f-a097-2adfa90d7076.sock
+INFOPATH = :/home/linuxbrew/.linuxbrew/share/info
 # environment
-VSCODE_CWD = /Users/oscar/code/crawler-test
+LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-PATH = /usr/local/opt/mysql@5.7/bin:/usr/local/opt/php@7.4/sbin:/usr/local/opt/php@7.4/bin:/usr/local/sbin:/Users/oscar/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public/:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/oscar/bin:/Users/oscar/.composer/vendor/bin:/Users/oscar/go/bin:/bin
+GIT_EDITOR = /ide/bin/remote-cli/gitpod-code --wait
 # environment
-LSCOLORS = Gxfxcxdxbxegedabagacad
+VSCODE_CWD = /ide
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-SDKMAN_DIR = /Users/oscar/.sdkman
+PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/workspace/.cargo/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.6/bin:/home/gitpod/.rvm/gems/ruby-2.7.6@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.6/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/workspace/.pip-modules/bin:/home/gitpod/.pyenv/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin:/home/gitpod/.nvm/versions/node/v16.15.1/bin
+# environment
+GITPOD_OWNER_ID = 1bdae385-f599-46ce-8721-cce5f129210a
+# environment
+GITPOD_WORKSPACE_ID = oscar3x39-crawlertest-2mtesrkc27q
+# environment
+GITPOD_INTERVAL = 30000
+# environment
+CARGO_HOME = /workspace/.cargo
+# environment
+rvm_stored_umask = 0022
+# environment
+GITPOD_WORKSPACE_CLUSTER_HOST = ws-us47.gitpod.io
+# environment
+GITPOD_ANALYTICS_SEGMENT_KEY = bUY8IRdJ42KjLOBS9LoIHMYFBD8rSzjU
+# environment
+SDKMAN_DIR = /home/gitpod/.sdkman
+# environment
+GITPOD_REPO_ROOTS = /workspace/crawler-test
 # environment
 SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
 # environment
-GOPATH = /Users/oscar/go
+GOPATH = /workspace/go
 # environment
-SDKMAN_PLATFORM = Darwin
+SDKMAN_PLATFORM = linuxx64
 # environment
 VSCODE_LOG_STACK = false
 # environment
-ELECTRON_RUN_AS_NODE = 1
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ace67bea-6155-4bd0-848a-4c2747c09fcf.sock
 # default
-.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.k49d3cqtAr/Listeners
+NIX_VERSION = 2.6.0
+# environment
+LS_COLORS = 
 # automatic
 %F = $(notdir $%)
 # environment
+GP_PREVIEW_BROWSER = /ide/bin/remote-cli/gitpod-code --preview
+# environment
+VISUAL = /ide/bin/remote-cli/gitpod-code
+# environment
+NIX_SSL_CERT_FILE = /etc/ssl/certs/ca-certificates.crt
+# environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /Users/oscar/code/crawler-test
+rvm_bin_path = /home/gitpod/.rvm/bin
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+WORKSPACEKIT_WRAP_NETNS = true
+# default
+.LOADED := 
+# environment
+GEM_HOME = /home/gitpod/.rvm/gems/ruby-2.7.6
+# environment
+MANPATH = /home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man
+# environment
+NODE_VERSION = 16.15.1
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /Users/oscar
-# default
-MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+PYENV_SHELL = bash
 # environment
-VSCODE_CLI = 1
+HOME = /home/gitpod
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/oscar/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+THEIA_WEBVIEW_EXTERNAL_ENDPOINT = webview-{{hostname}}
 # environment
-LOGNAME = oscar
+LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-ZSH = /Users/oscar/.oh-my-zsh
+GITPOD_CLI_APITOKEN = X5oECHj49lbf1fyA6_HIkMqsbreXbzRY
+# automatic
++F = $(notdir $+)
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-XPC_FLAGS = 0x0
+HOSTNAME = oscar3x39-crawlertest-2mtesrkc27q
 # environment
-SDKMAN_VERSION = 5.7.4+362
+GRADLE_USER_HOME = /workspace/.gradle/
 # environment
-COLORTERM = truecolor
+MAKELEVEL := 0
+# environment
+GEM_PATH = /home/gitpod/.rvm/gems/ruby-2.7.6:/home/gitpod/.rvm/gems/ruby-2.7.6@global
+# environment
+SDKMAN_VERSION = 5.15.0
 # default
 MAKE = $(MAKE_COMMAND)
-# environment
-LC_TERMINAL = iTerm2
-# environment
-SHLVL = 3
-# default
-MAKE_VERSION := 3.81
-# environment
-USER = oscar
-# makefile
-.DEFAULT_GOAL := up
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t0p0:E1F3BA52-5454-4164-B9F1-995612B68096
+IRBRC = /home/gitpod/.rvm/rubies/ruby-2.7.6/.irbrc
 # environment
-LESS = -R
+SHLVL = 0
+# environment
+NIX_PROFILES = /nix/var/nix/profiles/default /home/gitpod/.nix-profile
+# environment
+GITPOD_GIT_USER_NAME = oscar3x39
+# environment
+JAVA_HOME = /home/gitpod/.sdkman/candidates/java/current
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = gitpod
+# makefile
+.DEFAULT_GOAL := up
+# environment
+GOROOT = /home/gitpod/go
+# environment
+GITPOD_IDE_ALIAS = code
+# environment
+rvm_version = 1.29.12 (latest)
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# default
-MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # environment
-TERM_PROGRAM = iTerm.app
+GITPOD_REPO_ROOT = /workspace/crawler-test
+# environment
+PIP_USER = no
+# environment
+THEIA_RATELIMIT_LOG = 50
+# environment
+THEIA_MINI_BROWSER_HOST_PATTERN = browser-{{hostname}}
+# environment
+GITPOD_GIT_USER_EMAIL = oscar3x39@gmail.com
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /
 # default
 .VARIABLES := 
-# environment
-TMPDIR = /var/folders/s_/yzmlxl3x7kb8gzkzfvjpjs3h0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/oscar/Library/Application Support/Code/1.67.2-main.sock
-# makefile
-MAKEFLAGS = Rrqp
+GITPOD_PREVENT_METADATA_ACCESS = true
 # environment
-MFLAGS = -Rrqp
+GITPOD_HOST = https://gitpod.io
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 3.4.15
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.29841858.29841864.9C54F714-33D1-472C-821D-87D5679CFE8E
-# environment
-LC_TERMINAL_VERSION = 3.4.15
+NVM_DIR = /home/gitpod/.nvm
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# automatic
-+F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t0p0:E1F3BA52-5454-4164-B9F1-995612B68096
+rvm_user_install_flag = 1
 # environment
-COLORFGBG = 15;0
+BROWSER = /ide/bin/helpers/browser.sh
 # environment
-__CF_USER_TEXT_ENCODING = 0x1F5:0x2:0x35
+GITPOD_MEMORY = 3435
 # environment
-COMMAND_MODE = unix2003
+VSCODE_HANDLES_SIGPIPE = true
+# environment
+GITPOD_TASKS = [{"init":"make"}]
 # default
 MAKEFILES := 
+# environment
+GITPOD_CODE_HOST = https://gitpod.io
 # environment
 HOMEBREW_NO_AUTO_UPDATE = 1
 # automatic
 <F = $(notdir $<)
 # environment
-ITERM_PROFILE = Default
+PIPENV_VENV_IN_PROJECT = true
 # environment
-SDKMAN_CANDIDATES_DIR = /Users/oscar/.sdkman/candidates
+TRIGGER_REBUILD = 1
 # environment
-PAGER = less
+GP_EXTERNAL_BROWSER = /ide/bin/remote-cli/gitpod-code --openExternal
+# environment
+SDKMAN_CANDIDATES_DIR = /home/gitpod/.sdkman/candidates
+# environment
+EDITOR = /ide/bin/remote-cli/gitpod-code
+# environment
+PWD = /workspace/crawler-test
 # environment
 LC_ALL = C
+# environment
+GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"oscar3x39/crawler-test - main","ref":"main","refType":"branch","revision":"4e41598334433e1da1bc047f626b44e70c8eaddb","repository":{"cloneUrl":"https://github.com/oscar3x39/crawler-test.git","host":"github.com","name":"crawler-test","owner":"oscar3x39","private":false},"normalizedContextURL":"https://github.com/oscar3x39/crawler-test","checkoutLocation":"crawler-test","additionalFiles":{".gitpod.yml":"# This configuration file was automatically generated by Gitpod.\n# Please adjust to your needs (see https://www.gitpod.io/docs/config-gitpod-file)\n# and commit this file to your remote git repository to share the goodness with others.\n\ntasks:\n  - init: make\n\n\n"}}
+# environment
+JAVA_TOOL_OPTIONS =  -Xmx3435m
 # automatic
 ^F = $(notdir $^)
+# environment
+rvm_prefix = /home/gitpod
 # default
 SUFFIXES := 
-# default
-.INCLUDE_DIRS = /usr/local/include
 # environment
-MAKELEVEL := 0
+APACHE_DOCROOT_IN_REPO = public
+# environment
+PYENV_VIRTUALENV_INIT = 1
+# environment
+NGINX_DOCROOT_IN_REPO = public
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+rvm_loaded_flag = 1
+# environment
+GITPOD_INSTANCE_ID = b6c64431-576e-4e6c-856b-347899144c1a
+# environment
+GITPOD_WORKSPACE_URL = https://oscar3x39-crawlertest-2mtesrkc27q.ws-us47.gitpod.io
+# default
+.RECIPEPREFIX := 
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
+PYTHONUSERBASE = /workspace/.pip-modules
 # environment
-VSCODE_PID = 1020
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 # variable set hash-table stats:
-# Load=86/1024=8%, Rehash=0, Collisions=4/110=4%
+# Load=139/1024=14%, Rehash=0, Collisions=13/164=8%
 
 # Pattern-specific Variable Values
 
@@ -195,9 +299,9 @@ VSCODE_PID = 1020
 
 # Directories
 
-# . (device 16777220, inode 30444339): 11 files, no impossibilities.
+# . (device 2346, inode 805792396): 15 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -210,21 +314,19 @@ link:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 13):
+#  recipe to execute (from 'Makefile', line 13):
 	docker-compose run php php artisan storage:link
-	
 
 # Not a target:
 all:
-#  Command-line target.
+#  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 .PHONY: up down link refresh
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -233,39 +335,29 @@ up:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 4):
+#  recipe to execute (from 'Makefile', line 4):
 	docker-compose up -d
 	docker-compose run php php artisan cache:clear
 	docker-compose run php php artisan view:clear
 	docker-compose run php php artisan config:clear
-	
-
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-09 15:44:49
+#  Last modified 2022-06-14 18:20:47
 #  File has been updated.
 #  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 refresh:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 16):
+#  recipe to execute (from 'Makefile', line 16):
 	docker-compose up -d
 	docker-compose run php php artisan migrate:refresh --force
 	docker-compose run php php artisan db:seed --force
 	docker-compose run php php artisan storage:link
-	
 
 # Not a target:
 .DEFAULT:
@@ -278,23 +370,23 @@ down:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 10):
+#  recipe to execute (from 'Makefile', line 10):
 	docker-compose down -v
-	
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/25=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/27=0%
 # VPATH Search Paths
 
-# No `vpath' search paths.
+# No 'vpath' search paths.
 
-# No general (`VPATH' variable) search path.
+# No general ('VPATH' variable) search path.
 
-# # of strings in strcache: 1
-# # of strcache buffers: 1
-# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
-# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+# strcache buffers: 1 (0) / strings = 25 / storage = 217 B / avg = 8 B
+# current buf: size = 8162 B / used = 217 B / count = 25 / avg = 8 B
 
-# Finished Make data base on Thu Jun  9 15:45:08 2022
+# strcache performance: lookups = 38 / hit rate = 34%
+# hash-table stats:
+# Load=25/8192=0%, Rehash=0, Collisions=1/38=3%
+# Finished Make data base on Wed Jun 15 16:34:11 2022
 
  
