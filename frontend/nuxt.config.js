@@ -61,7 +61,7 @@ export default {
 
   proxy: {
     '/api': {
-      target: 'http://127.0.0.1:8000/api',
+      target: 'https://8080-oscar3x39-crawlertest-2mtesrkc27q.ws-us47.gitpod.io/api/',
       pathRewrite: { '^/api': '/' }
     }
   },
